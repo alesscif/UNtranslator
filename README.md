@@ -1,7 +1,7 @@
 # UNtranslator
 Translates traditional Tekken notation to Universal Numpad notation
 
-Major changes:
+Simplified conversion table:
 
 a,b,c,d = 1,2,3,4
 
