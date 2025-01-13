@@ -322,8 +322,8 @@ public class UNtranslator {
     }
 
     private static List<String> tokenize(String text) {
-        // We'll attempt a greedy match for dictionary tokens or '*' appended tokens.
-        // If no dictionary match, and character is not whitespace, we throw an exception.
+        // Attempts a greedy match for dictionary tokens or '*' appended tokens.
+        // If no dictionary match, and character is not whitespace, throws an exception.
         // Whitespace sequences are kept as separate tokens.
 
         // Sort dictionary keys by length descending for longest match
@@ -374,7 +374,7 @@ public class UNtranslator {
                     throw new RuntimeException("'*' found without preceding token.");
                 }
 
-                // If it's not whitespace (already handled), and no match found, unknown symbol
+                // If not whitespace (already handled), and no match found, unknown symbol
                 throw new RuntimeException("Unrecognized symbol: '" + c + "'");
             }
         }
